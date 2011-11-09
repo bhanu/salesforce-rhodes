@@ -1,0 +1,30 @@
+#sdk: "/Users/bhanu/.gems/gems/rhodes-3.2.0"
+sdkversion: 3.2.0
+name: salesforce-rhodes
+version: 1.0
+vendor: rhomobile
+build: debug
+bbver: 4.6
+wmsdk: "Windows Mobile 6 Professional SDK (ARMV4I)"
+applog: rholog.txt
+iphone:
+  configuration: Release
+  sdk: iphonesimulator4.3
+  provisionprofile:
+  codesignidentity:
+  entitlements:
+  BundleIdentifier: com.rhomobile.salesforce-rhodes
+  BundleURLScheme: salesforce-rhodes
+wp:
+  productid: 'd5a9d690-e328-012e-2d13-60c54789b794'
+symbian:
+  uid: '0xeba45a27'
+# android:
+  # version: 2.1
+
+extensions: ["json", "another-extension"]
+capabilities:
+  -push
+  -vibrate
+android:
+  version: 2.3.3

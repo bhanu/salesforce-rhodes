@@ -1,0 +1,33 @@
+<div data-role="page" data-add-back-btn="false">
+
+  <div data-role="header" data-position="inline">
+    <h1><%= @account.name %></h1>
+    <a href="<%= url_for :action => :index %>" class="ui-btn-left" data-icon="arrow-l" data-direction="reverse">Back</a>
+    <a href="<%= url_for :action => :edit, :id => @account.object %>" class="ui-btn-right" data-icon="star">Edit</a>
+  </div>
+
+  <%= puts "## In show, @account: #{@account.inspect} -- #{@account.Name} -- #{@account.Phone} -- #{@account.Website}" %>
+  <p/>
+
+  <div data-role="content">
+    <ul data-role="listview">
+
+          <li>
+            <div class="itemLabel">Name</div>
+            <div class="itemValue"><%= @account.Name %></div>
+          </li>
+
+          <li>
+            <div class="itemLabel">Phone</div>
+            <div class="itemValue"><%= @account.Phone %></div>
+          </li>
+
+          <li>
+            <div class="itemLabel">Website</div>
+            <div class="itemValue"><%= @account.Website %></div>
+          </li>
+
+    </ul>
+  </div>
+
+</div>
